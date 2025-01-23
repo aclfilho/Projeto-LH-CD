@@ -43,5 +43,5 @@ jupyter notebook modelagem.ipynb
 
 
 
-# Segue link para arquivos .pkl (GitHub não suportou o tamanho)
+# Segue link para arquivos .pkl.
 https://drive.google.com/drive/folders/1ZcQ_cHu4sh82Gh6Tb6nK-qkmUC7CbTgV?usp=drive_link
