@@ -50,21 +50,20 @@ plt.show
 #2 b)
 correlacao = ds[['price', 'disponibilidade_365', 'reviews_por_mes']].corr()
 
-#scatter plot para explorar a relação entre disponibilidade e preço (mapa de calor)
+#scatter plot da relação entre o minimo de noites e o preço
+sns.lmplot(x='minimo_noites', y='price', data=ds, aspect=2, height=4, scatter_kws={'color': 'blue', 's':20}, line_kws={'color': 'gray'})
+plt.title('Número min de noites x Preço')
+plt.xlabel('Min noites')
+plt.ylabel("Preço")
+plt.show()
+
+
+#scatter plot para explorar a relação entre disponibilidade e preço
 sns.lmplot(x='disponibilidade_365', y='price', data=ds, aspect=2, height=4, scatter_kws={'color': 'skyblue', 's':20}, line_kws={'color': 'orange'})
 plt.title('Disponibilidade x Preço')
 plt.xlabel('Disponibilidade (dias)')
 plt.ylabel('Preço')
 plt.show()
-
-
-#scatter plot para explorar a relação entre reviews por mês e preço (mapa de calor)
-sns.lmplot(x='reviews_por_mes', y='price', data=ds, aspect=2, height=4, scatter_kws={'color':'skyblue', 's':20}, line_kws={'color':'orange'})
-plt.title('Reviews por Mês x Preço')
-plt.xlabel('Reviews por Mês')
-plt.ylabel('Preço')
-plt.show()
-
 
 
 #2 c)
